@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+  overflow-x: hidden;
+  min-height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  background-image: url("./components/components-images/hospital-img.jpg");
+  background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h3{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.html{
+  background-image: url("./components/components-images/hospital-img.jpg");
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#main-sec{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nav-header{
+  display: flex;
+  gap: 30px;
+  padding: 15px;
+  background-color: #6f0f9a;
+  height: 8vh;
+  align-items: center;
+}
+
+.header-menu{
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  color: white;
+}
+
+.menu-items{
+  padding: 2%;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  margin: 5%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.drop-inside{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 125px;
+  color: black;
+  gap: 25px;
+  padding: 13px;
+}
+
+.drop-inside h6{
+  cursor: pointer;
+}
+
+.drop-inside h6:hover{
+  background-color:#7459b3;
+  transition: 1s;
+  color: white;
+}
+
+.head-drop{
+  display: flex;
+  align-items: center;
+  height: 2vh;
+  cursor: pointer;
+}
+
+.menu-items:hover{
+  background: #7459b3;
+  transition: 2s;
+}
+
+.shop-cart-icon{
+  display: flex;
+  position: relative;
+  left: 1080px;
+}
+
+#products-page{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#products-page img{
+  width: 11%;
+  height: 205px;
+}
+
+#products-page p{
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 15px;
+}
+
+#main-page-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 85vh;
+}
+
+#main-page-div button, #products-page button{
+  cursor: pointer;
+  background-color: #6f0f9a;
+  border: 2px solid azure;
+  color: #ffffff;
+  padding: 15px;
+  width: 16%;
+  border-radius: 25px;
+}
+
+#main-page-div button:hover, #products-page button:hover{
+  background-color: #4618b1;
+  transition: 2s;
+  color: lightgray;
+}
+
+@media (min-width: 1024px) {
+ #main-page-div{
+  display: flex;
+  flex-direction: column;
+ }
 }
