@@ -8,6 +8,29 @@
   min-height: 100%;
 }
 
+#container-block{
+display: flex;
+background-image: url("./components/components-images/hospital-img.jpg");
+background-repeat: round;
+flex-direction: column;
+align-items: center;
+height: 93vh;
+}
+
+
+#cards-container-inside{
+  display: flex;
+  gap: 30px;
+}
+
+#click-div{
+  cursor: pointer;
+  background-color: #7459b3;
+  padding: 10px;
+  border: 2px solid lightsteelblue;
+  border-radius: 15px;
+}
+
 h3{
   color: white;
 }
@@ -16,10 +39,6 @@ li{
   list-style: none;
 }
 
-.html{
-  background-image: url("./components/components-images/hospital-img.jpg");
-  background-repeat: no-repeat;
-}
 
 #navbar-page{
   display: flex;
@@ -54,8 +73,6 @@ li{
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url("./components/components-images/hospital-img.jpg");
-  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
 }
@@ -94,17 +111,21 @@ a{
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 80px;
+  top: 95px;
   color: whitesmoke;
-  background-color: #4618b1;
+  background-color: #7459b3;
+  padding: 10px;
+  gap: 12px;
+  border-radius: 15px;
+  border: 2px solid azure;
 }
 
-.drop-inside p{
+.list-inside li{
   cursor: pointer;
 }
 
-.drop-inside p:hover{
-  background-color:#7459b3;
+.list-inside li:hover{
+  background-color: #4618b1;
   transition: 1s;
   color: white;
 }

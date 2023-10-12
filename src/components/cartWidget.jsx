@@ -4,7 +4,7 @@ import{ AiOutlineShoppingCart } from "react-icons/ai"
 function CartWidget () {
     const [contado, setContado] = useState(false);
     useEffect(() =>{
-        console.log("contando carrito", {contado});
+        
     })
     return(
         <div className="cart-div">
