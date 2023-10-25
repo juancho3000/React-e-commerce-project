@@ -1,0 +1,15 @@
+#products-page{
+  background-image: url("../components-images/hospital-img.jpg");
+  background-repeat: round;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
+#products-page-b{
+  color: white;
+  background-color: black;
+}

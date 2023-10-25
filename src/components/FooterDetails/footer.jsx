@@ -1,6 +1,6 @@
 //import { useState } from "react";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
-//import { ItemListContainer } from "./itemListContainer";
+import "./Footer.css";
 
 function Footer(){
     //const [on, setOn] = useState(false)

@@ -1,0 +1,33 @@
+.main-div{
+    display: flex;
+
+flex-direction: column;
+align-items: center;
+}
+
+.mainPageButton{
+    cursor: pointer;
+    background-color: #6f0f9a;
+    border: 2px solid azure;
+    color: #ffffff;
+    padding: 15px;
+    width: auto;
+    border-radius: 25px;
+}
+
+.mainPageButton:hover{
+    background-color: #4618b1;
+    transition: 2s;
+    color: lightgray;
+}
+
+#mainPageCenter{
+    background-image: url("../components-images/hospital-img.jpg");
+background-repeat: round;
+height: 60vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}

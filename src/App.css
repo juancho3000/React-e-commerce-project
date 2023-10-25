@@ -14,21 +14,7 @@ background-image: url("./components/components-images/hospital-img.jpg");
 background-repeat: round;
 flex-direction: column;
 align-items: center;
-height: 93vh;
-}
 
-
-#cards-container-inside{
-  display: flex;
-  gap: 30px;
-}
-
-#click-div{
-  cursor: pointer;
-  background-color: #7459b3;
-  padding: 10px;
-  border: 2px solid lightsteelblue;
-  border-radius: 15px;
 }
 
 h3{
@@ -39,27 +25,6 @@ li{
   list-style: none;
 }
 
-
-#navbar-page{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  background-color: #6f0f9a;
-  height: 22vh;
-}
-
-.nav-icon-brand{
-  display: flex;
-  align-items: center;
-}
-
-.cart-div{
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-
 .button-products-show{
   background-color: #7459b3;
   border: 2px solid slateblue;
@@ -68,13 +33,6 @@ li{
   color: white;
   cursor: pointer;
 
-}
-#main-sec{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
 }
 
 .nav-header{
@@ -86,54 +44,9 @@ li{
   align-items: center;
 }
 
-.header-menu{
-  display: flex;
-  list-style: none;
-  color: white;
-  width: 40%;
-  align-items: center;
-}
-
-.menu-items{
-  padding: 2%;
-  border: 2px solid transparent;
-  border-radius: 2px;
-  margin: 5%;
-}
-
 a{
   text-decoration: none;
   color: white;
-  cursor: pointer;
-}
-
-.drop-inside{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 95px;
-  color: whitesmoke;
-  background-color: #7459b3;
-  padding: 10px;
-  gap: 12px;
-  border-radius: 15px;
-  border: 2px solid azure;
-}
-
-.list-inside li{
-  cursor: pointer;
-}
-
-.list-inside li:hover{
-  background-color: #4618b1;
-  transition: 1s;
-  color: white;
-}
-
-.head-drop{
-  display: flex;
-  align-items: center;
-  height: 2vh;
   cursor: pointer;
 }
 
@@ -142,105 +55,4 @@ a{
   transition: 2s;
 }
 
-.shop-cart-icon{
-cursor: pointer;
-margin: 10px;
-padding: 5px;
-border-radius: 10px;
-}
-
-#products-page{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-#products-page img{
-  width: 11%;
-  height: 205px;
-}
-
-#products-page p{
-  background-color: blanchedalmond;
-  padding: 10px;
-  border: 2px solid blue;
-  border-radius: 15px;
-}
-
-#main-page-div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-#main-page-div button, #products-page button{
-  cursor: pointer;
-  background-color: #6f0f9a;
-  border: 2px solid azure;
-  color: #ffffff;
-  padding: 15px;
-  width: auto;
-  border-radius: 25px;
-}
-
-#main-page-div button:hover, #products-page button:hover{
-  background-color: #4618b1;
-  transition: 2s;
-  color: lightgray;
-}
-
-#page-footer{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: #6f0f9a;
-  height: 20vh;
-}
-
-#page-footer ul{
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-#page-footer li{
-  cursor: pointer;
-}
-
-/*@media (min-width: 1024px) {
- #main-page-div{
-  display: flex;
-  flex-direction: column;
- }
-}*/
-
-.resultado{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  height: auto;
-}
-
-.products-cards{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 15px;
-  padding: 20px;
-  background-color: blueviolet;
-  border-radius: 15px;
-  color: white;
-}
-
-.resultado ul{
-  display: flex;
-  gap: 50px;
-}
 

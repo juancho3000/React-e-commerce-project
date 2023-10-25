@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import{ AiOutlineShoppingCart } from "react-icons/ai"
+import "./cartWidget.css";
 
 function CartWidget () {
     const [contado, setContado] = useState(false);

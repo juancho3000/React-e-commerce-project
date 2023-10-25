@@ -1,0 +1,12 @@
+.cart-div{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .shop-cart-icon{
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    }

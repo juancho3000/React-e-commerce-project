@@ -1,0 +1,32 @@
+#page-footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #6f0f9a;
+    height: 20vh;
+  }
+  
+  #page-footer ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  #page-footer li{
+    cursor: pointer;
+  }
+  
+  .resultado{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: auto;
+  }
+  
+  .resultado ul{
+    display: flex;
+    gap: 50px;
+  }
+  
