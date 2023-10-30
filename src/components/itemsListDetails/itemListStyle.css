@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
   }
 
   #main-page-div{
@@ -63,16 +62,48 @@
 
   .count-style{
     display: flex;
-    width: 100%;
+    width: 60%;
     justify-content: space-evenly;
   }
 
-  @media (max-width: 800px) {
-    #cards-container-inside{
+  #minus{
+    padding: 2px 6px;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+    color: red;
+  }
+
+   #plus{
+    padding: 2px 6px;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #73ff73;
+   }
+
+  #buy{
+    padding: 2px 6px;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+
+  @media (max-width: 1000px) {
+   .item-check{
       display: flex;
       flex-direction: column;
       overflow-y: scroll;
-      max-height: 60vh;
     }
   }
   
+
+  .item-check{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }

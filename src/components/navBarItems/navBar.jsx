@@ -1,20 +1,15 @@
-//import { ItemListContainer} from "./itemListContainer"; 
 import { useState } from "react"
 import CartWidget from "../cartDetails/cartWidget";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import "./navBarstyle.css";
 import { Link } from "react-router-dom";
-/*import { BiRightArrow } from "react-icons/bi";
-import { BiDownArrow } from "react-icons/bi";
-;*/
 
-const NavBar =  ({productos}) => {
-
+const NavBar = () => {
    const [active, setActive] = useState(false);
     return(
         <nav id="navbar-page">
             <div className="nav-icon-brand">
-                <Link to="/">
+                <Link to={"/"}>
                 <MdOutlineHealthAndSafety size={50}/>
                 </Link>
                 
@@ -23,20 +18,17 @@ const NavBar =  ({productos}) => {
      <ul className="header-menu">              
       <li className="menu-items">
          <div className="head-drop" onClick={()=>setActive(!active)}>
-          <Link to={`/ItemListC/${"suplementos"}`}>Prodcutos</Link>
-        
+        Productos
         </div> 
          <div>
           {active &&
             <div className="drop-inside">
-                {productos.map((menu, index) =>{
-                    return(
-                         <div className="list-inside" key={index}>
-                        <ul><li>{menu.titulo}</li></ul>
+                         <div className="list-inside">
+                        <ul>
+                                <li ><Link to={`/categoria/${"suplementos"}`}>Suplementos</Link></li>
+                                <li><Link to={`/categoria/${"pediatricos"}`}>pediatria</Link></li>
+                            </ul>
                     </div>
-                    )
-                })}
-                
             </div> 
             }
         </div>                   
