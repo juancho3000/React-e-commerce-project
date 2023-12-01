@@ -30,13 +30,13 @@ export const ShopCartProvider = ({children}) => {
     const totalQty = cart.map(value => value.cantidad);
     
     
-    const total = cart.map((acc, item) => (acc + item), 0)
+    const total = cart.map(value => value.price * value.qty)
 
     const outcomePrice = total.length
     
     const totalBuy = total.reduce((acc, item) => (acc +=item),0)
    
-console.log(outcomePrice, totalQty, "prueba para ver cantidad total")
+console.log(outcomePrice, totalQty, total, "prueba para ver cantidad total")
     return(
         <CartContext.Provider value={{cart, agregarCarro, quitarDelCarro, limpiarCarro, outcomePrice, totalBuy}}>
             {children}
