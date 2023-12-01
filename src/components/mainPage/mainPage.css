@@ -22,7 +22,7 @@ align-items: center;
 }
 
 #mainPageCenter{
-    background-image: url("../components-images/hospital-img.jpg");
+background-image: url("../components-images/hospital-img.jpg");
 background-repeat: round;
 height: 62vh;
 width: 100%;
@@ -30,4 +30,5 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+gap: 15px;
 }

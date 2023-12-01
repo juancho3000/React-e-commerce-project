@@ -1,9 +1,7 @@
-//import { useState } from "react";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import "./Footer.css";
 
 function Footer(){
-    //const [on, setOn] = useState(false)
     return(
         <footer id="page-footer">
             <div>

@@ -1,15 +1,20 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect} from "react";
 import{ AiOutlineShoppingCart } from "react-icons/ai"
 import "./cartWidget.css";
+import { CartContext } from "../context/cartContext";
+import { Link } from "react-router-dom";
 
 function CartWidget () {
-    const [contado, setContado] = useState(false);
+    const {outcomePrice} = useContext(CartContext)
     useEffect(() =>{
         
     })
     return(
         <div className="cart-div">
-             <button onClick={() => setContado(contado + 1)} className="shop-cart-icon"><AiOutlineShoppingCart size={60}/>{contado}</button>
+             <Link to="/CartProducts"  style={{display: outcomePrice !== isNaN ? "block" : "none"}} >
+                <AiOutlineShoppingCart className="shop-cart-icon" size={50}/>
+                {outcomePrice}
+             </Link>
         </div>
     )
 }

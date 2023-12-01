@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./itemListStyle.css";
 import { Link } from "react-router-dom";
+import Loader from "./Loader";
 
-const ItemList = ({description, img, price, id, title, categoria}) => {
+function ItemList({description, img, price, id, title, categoria})  {
   
-    return(
+    const [loading, setLoading] = useState(true)
+
+    setTimeout(() => {
+        setLoading((loading) => !loading) 
+    }, 2000)
+    if(loading){
+        return (
+        <Loader/> 
+        )
+    }else{
+          return(
         <section id="main-sec">
          <div id="main-page-div">
              <div>          
@@ -21,5 +32,8 @@ const ItemList = ({description, img, price, id, title, categoria}) => {
         </div> 
         </section>
     )
+    }
+
+  
 }
 export default ItemList;

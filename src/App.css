@@ -10,11 +10,15 @@
 
 #container-block{
 display: flex;
-background-image: url("./components/components-images/hospital-img.jpg");
 background-repeat: round;
 flex-direction: column;
 align-items: center;
 
+}
+#inside-block{
+  background-image: url("./components/components-images/hospital-img.jpg");
+  width: 100%;
+  height: 90vh;
 }
 
 h3{
@@ -53,6 +57,17 @@ a{
 .menu-items:hover{
   background: #7459b3;
   transition: 2s;
+}
+
+.loading-icon{
+  color: #4618b1;
+  font-size: 10rem;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(720deg);}
 }
 
 

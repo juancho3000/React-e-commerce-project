@@ -3,6 +3,8 @@ import CartWidget from "../cartDetails/cartWidget";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import "./navBarstyle.css";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 
 const NavBar = () => {
    const [active, setActive] = useState(false);
@@ -20,13 +22,14 @@ const NavBar = () => {
          <div className="head-drop" onClick={()=>setActive(!active)}>
         Productos
         </div> 
+        
          <div>
           {active &&
             <div className="drop-inside">
                          <div className="list-inside">
                         <ul>
-                                <li ><Link to={`/categoria/${"suplementos"}`}>Suplementos</Link></li>
-                                <li><Link to={`/categoria/${"pediatricos"}`}>pediatria</Link></li>
+                                <li><NavLink to={`/categoria/${"suplementos"}`} className={({isActive}) => isActive ? "ActiveOption" : "option"}>Suplementos</NavLink></li>
+                                <li><NavLink to={`/categoria/${"pediatricos"}`} className={({isActive}) => isActive ? "ActiveOption" : "option"}>pediatria</NavLink></li>
                             </ul>
                     </div>
             </div> 

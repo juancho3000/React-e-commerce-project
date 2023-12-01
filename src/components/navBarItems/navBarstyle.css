@@ -4,6 +4,7 @@
     width: 100%;
     background-color: #6f0f9a;
     height: 18vh;
+    align-items: center;
   }
   
   .nav-icon-brand{

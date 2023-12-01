@@ -1,13 +1,13 @@
 import React from "react";
-import ItemList from "./item-list";
-import "./itemListStyle.css";
+import ItemDetail from "./itemDetail";
 
-const Item = ({productos}) => {
+const ItemDetailProps = ({productos}) => {
     return(
+     
         <div className="item-check">
             {productos.map((p) =>{
                 return(
-                    <ItemList
+                    <ItemDetail
                     key={p.id}
                     id={p.id}
                     title={p.titulo}
@@ -19,10 +19,8 @@ const Item = ({productos}) => {
                      />
                 )
             })}
-        
         </div>
-        
     )
 }
 
-export default React.memo(Item);
+export default React.memo(ItemDetailProps);
