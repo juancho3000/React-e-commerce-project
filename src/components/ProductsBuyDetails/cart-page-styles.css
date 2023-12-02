@@ -49,3 +49,31 @@
   color: white;
   transition: 1s;
 }
+
+#home-route{
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+}
+
+#clean-cart{
+  background-color:mediumpurple;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#clean-cart:hover{
+  background-color: indigo;
+  transition: 2s;
+}
+
+#check-final{
+  background-color: darkgray;
+  color: #73ff73;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+}

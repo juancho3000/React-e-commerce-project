@@ -5,7 +5,7 @@ import { CartContext } from "../context/cartContext";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Loader from "../itemsListDetails/Loader";
-
+import { SlArrowLeft } from "react-icons/sl";
 
  function ProductosComprar () {
   const {cart, limpiarCarro, outcomePrice, totalBuy, quitarDelCarro} = useContext(CartContext)
@@ -40,6 +40,7 @@ import Loader from "../itemsListDetails/Loader";
         <div>
             <NavBar/>
               <div id="products-page">
+                <Link id="home-route" to="/"><SlArrowLeft />Ir al home</Link>
             {cart.map(p => 
             <div className="cart-prods-bought" key={p.id} >
               <h3>Producto: {p.description}</h3>
@@ -48,9 +49,9 @@ import Loader from "../itemsListDetails/Loader";
               <p>Subtotal: ${p.price * p.qty}</p>
               <button className="delete-single-prod" onClick={() => quitarDelCarro(p.id)}>x</button>
              </div>)}
-            <h3>precio absoluto: ${totalBuy}</h3>
-            <button onClick={() => limpiarCarro()}>click para limpiar carro de compra</button>
-            <Link to="/">volver al home</Link>
+            <h3 id="check-final">precio absoluto: ${totalBuy}</h3>
+            <button id="clean-cart" onClick={() => limpiarCarro()}>click para limpiar carro de compra</button>
+            
          </div>
          <Footer/>
         </div>
