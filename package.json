@@ -1,5 +1,5 @@
 {
-  "homepage": "https://juancho3000.github.io/React-e-commerce-project/",
+  "homepage": "https://juancho3000.github.io/React-e-commerce-project",
   "name": "coderhouse-juansuarez-proyecto",
   "version": "0.1.0",
   "private": true,
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-router-dom": "^5.3.3",
+    "gh-pages": "^4.0.0"
   }
 }
