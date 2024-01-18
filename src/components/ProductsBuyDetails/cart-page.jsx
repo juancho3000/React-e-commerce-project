@@ -41,14 +41,19 @@ import { SlArrowLeft } from "react-icons/sl";
             <NavBar/>
               <div id="products-page">
                 <Link id="home-route" to="/"><SlArrowLeft />Ir al home</Link>
-            {cart.map(p => 
-            <div className="cart-prods-bought" key={p.id} >
+                <div id="payment-check-container">
+            {cart.map(p =>
+            
+               <div className="cart-prods-bought" key={p.id} >
               <h3>Producto: {p.description}</h3>
               <p>Precio individual: ${p.price}</p>
               <p>Cantidad: {p.qty}</p>
               <p>Subtotal: ${p.price * p.qty}</p>
               <button className="delete-single-prod" onClick={() => quitarDelCarro(p.id)}>x</button>
-             </div>)}
+             </div>
+            
+           )}
+           </div>
             <h3 id="check-final">precio absoluto: ${totalBuy}</h3>
             <button id="clean-cart" onClick={() => limpiarCarro()}>click para limpiar carro de compra</button>
             

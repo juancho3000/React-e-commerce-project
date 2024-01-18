@@ -22,7 +22,7 @@ function ItemList({description, img, price, id, title, categoria})  {
                 <div id="cards-container-inside">
                 <div className="products-cards">
                 <h2>{description}</h2>
-                <img src={img} alt={title}></img>
+                <img style={{height:"36vh"}} src={img} alt={title}></img>
                 <p>${price}</p>
                 <p>{categoria}</p>
                 <button><Link to={`/ItemDetail/${id}`}>Detalles</Link></button>    

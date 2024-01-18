@@ -10,7 +10,7 @@ export const ShopCartProvider = ({children}) => {
         if(!isInCart(item.id)){
             setCart(prev => [...prev, {...item, qty}])
         } else {
-            alert("ya se agrego este producto, para cambiar cantidad ve al carrito")
+            alert("ya se agrego este producto")
         }
     }
 

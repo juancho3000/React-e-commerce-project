@@ -28,9 +28,6 @@ function MainPage () {
        <div id="mainPageCenter">
          <button className="mainPageButton">
         <Link to={`ItemListC`}>click para ir a productos</Link></button>
-       <button className="mainPageButton"><Link to={`dbPrueba`}>click para db</Link></button>
-       <button className="mainPageButton"><Link to={`ordersDemand`}>click para orders de prueba</Link></button>
-       <button className="mainPageButton"><Link to={`Render`}>click para ver render</Link></button>
        </div>
         <Footer/>
         </div>

@@ -26,7 +26,7 @@ const ItemDetail = ({description, img, price, id, titulo, stock})  => {
          <div id="cards-container-inside">
                      <div className="products-cards" >
            <h2>{id} {description}</h2>
-            <img src={img} alt={titulo}></img>
+            <img style={{height:"36vh"}} src={img} alt={titulo}></img>
             <h5>${price}</h5>
            
             {quantityAdd > 0 ? (

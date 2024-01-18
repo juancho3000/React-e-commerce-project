@@ -24,7 +24,8 @@ align-items: center;
 #mainPageCenter{
 background-image: url("../components-images/hospital-img.jpg");
 background-repeat: round;
-height: 62vh;
+height: 100vh;
+background-size: cover;
 width: 100%;
 display: flex;
 flex-direction: column;

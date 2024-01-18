@@ -8,7 +8,7 @@ const ItemDetailCount = ({onAdd, stock}) => {
 
 
     const sumarProducto = () =>{
-       conteo < 10 ? setConteo( conteo + 1) : alert("el stock no es suficiente");
+       conteo < 10 ? setConteo( conteo + 1) : alert("este es el limite maximo de compra");
      }
      const restaProducto = () => {
         if(conteo === 0){return;}

@@ -19,6 +19,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+// eslint-disable-next-line
 const app = initializeApp(firebaseConfig);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
