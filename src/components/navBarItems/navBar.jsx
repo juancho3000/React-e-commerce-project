@@ -13,7 +13,7 @@ const NavBar = () => {
       </div>
 
       <div>
-        <h1 style={{color: "white"}}>Medicinas Juan Suarez</h1>
+        <h1 style={{color: "white"}}>Medicinas Juan e-shop</h1>
       </div>
       <Link to={"/CartProducts"}>
         <CartWidget />
