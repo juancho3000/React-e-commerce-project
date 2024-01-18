@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/React-e-commerce-project/static/css/main.62925fc4.css",
+    "main.js": "/React-e-commerce-project/static/js/main.0e713dd9.js",
+    "static/js/787.c1274fb5.chunk.js": "/React-e-commerce-project/static/js/787.c1274fb5.chunk.js",
+    "static/media/hospital-img.jpg": "/React-e-commerce-project/static/media/hospital-img.f8347758ef27f6bf607b.jpg",
+    "static/media/mult-vit-sup.jpg": "/React-e-commerce-project/static/media/mult-vit-sup.d6cf88f64b7e3a49bae3.jpg",
+    "static/media/multi-vit-women.jpg": "/React-e-commerce-project/static/media/multi-vit-women.f50bd00f493ba970cdc3.jpg",
+    "static/media/fish-oil.jpg": "/React-e-commerce-project/static/media/fish-oil.6054e8c1484cee0f34ee.jpg",
+    "index.html": "/React-e-commerce-project/index.html",
+    "main.62925fc4.css.map": "/React-e-commerce-project/static/css/main.62925fc4.css.map",
+    "main.0e713dd9.js.map": "/React-e-commerce-project/static/js/main.0e713dd9.js.map",
+    "787.c1274fb5.chunk.js.map": "/React-e-commerce-project/static/js/787.c1274fb5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62925fc4.css",
+    "static/js/main.0e713dd9.js"
+  ]
+}
